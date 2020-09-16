@@ -31,7 +31,7 @@ do
 		sed -i '' 's|target_dir|'"$target"'|g' convert2csv.m
 		$PATH_TOMAT -nodisplay -nosplash -nodesktop -r "run(./convert2csv.m);exit;"
 		echo "gotta move those $i son!"
-		#mv SS"$i"* /Users/pablomorales/Desktop/FB2L/Data/DTCPA_Data/SS"$i"
+		#mv SS"$i"* /Users/pablomorales/SS"$i"
 		echo "resetting .m file"
 		sed -i '' 's|'"$target"'|target_dir|g' convert2csv.m
 	fi
